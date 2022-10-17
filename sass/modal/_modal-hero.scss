@@ -1,0 +1,45 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-hero {
+  min-width: 528px;
+  min-height: 581px;
+  background-color: $modal-white-bgc;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: $modal-white-bgc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: var(--black-text-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    fill: $accent-color;
+  }
+}

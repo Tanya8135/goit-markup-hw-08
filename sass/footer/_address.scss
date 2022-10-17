@@ -1,0 +1,77 @@
+.footer {
+  display: block;
+  background-color: $basic-fon-site;
+}
+
+.container-footer {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.address-action__box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
+.footer-address {
+  @media screen and (min-width: 768px) {
+    // margin: 0 auto;
+  }
+  display: block;
+  // margin-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // width: 232px;
+}
+
+.logo-footer {
+  @media screen and (min-width: 1600px) {
+    display: block;
+  }
+
+  @include font(24px, 700, 1.2);
+
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: $white-text;
+  margin-bottom: 20px;
+}
+
+.address-list {
+  margin-bottom: 8px;
+}
+
+.address-link {
+  @media screen and (min-width: 1600px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $white-text;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    outline: none;
+  }
+}

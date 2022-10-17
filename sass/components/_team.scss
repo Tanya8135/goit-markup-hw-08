@@ -1,0 +1,153 @@
+.team {
+  margin-top: 0;
+  margin-bottom: 0;
+  // width: 1600px;
+}
+
+.team-our {
+  background: $bgc-team;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.team-bgc {
+  background-color: $team-bgc-icon;
+}
+
+.team-title {
+  @media screen and (min-width: 1600px) {
+    @include font(36px, 700, 1.2);
+    padding-bottom: 50px;
+  }
+
+  @include font(28px, 700, 1.2);
+
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  color: $basic-text-color;
+}
+
+.team-list {
+  padding: 0;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.team-item {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 100%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 270px;
+    height: 100%;
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-left: 30px;
+    }
+  }
+
+  // min-width: 450px;
+  height: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:nth-child(4n) {
+    margin-bottom: 0;
+  }
+}
+
+.team-name {
+  padding: 30px 0 24px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px, 74px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 30px, 32px;
+  }
+}
+
+.team-name__title {
+  @include font(16px, 500, 1.2);
+
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  color: $basic-text-color;
+}
+
+.team-name__text {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2;
+  color: $secondary-color;
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.team-social__item {
+  margin-right: 10px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.team-social__icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  background-color: $team-bgc-icon;
+  border-radius: 50%;
+  fill: $fill-icon;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $hover-fill-icon;
+    background: $accent-color;
+    fill: $hover-fill-icon;
+    outline: none;
+  }
+}

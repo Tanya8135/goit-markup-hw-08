@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color:  $basic-text-color;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+

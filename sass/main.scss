@@ -1,0 +1,18 @@
+@import './base/variables';
+@import './base/utils';
+@import './base/mixin';
+@import './base/common';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/team';
+@import './components/clients';
+@import './components/general';
+
+@import './footer/address';
+@import './footer/social';
+@import './footer/subscribe';
+
+@import './modal/modal-hero';
+@import './modal/form-data';
