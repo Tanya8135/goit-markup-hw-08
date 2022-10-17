@@ -59,7 +59,7 @@
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     width: 270px;
     height: 100%;
     margin-right: 30px;
@@ -73,6 +73,20 @@
       margin-left: 30px;
     }
   }
+  // @media screen and (min-width: 1600px) {
+  //   width: 270px;
+  //   height: 100%;
+  //   margin-right: 30px;
+  //   margin-bottom: 0;
+
+  //   &:nth-child(4n) {
+  //     margin-right: 0;
+  //   }
+
+  //   &:nth-child(3n) {
+  //     margin-left: 30px;
+  //   }
+  // }
 
   // min-width: 450px;
   height: 100%;

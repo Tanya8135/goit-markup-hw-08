@@ -10,12 +10,18 @@
 }
 }
 
-@mixin desktop  {
-  @media screen and (min-width: 1600px) {
+@mixin desktop {
+  @media screen and (min-width: 769px) and (max-width: 1600px) {
     @content;
   }
-  
 }
+
+// @mixin desktop  {
+//   @media screen and (min-width: 1600px) {
+//     @content;
+//   }
+  
+// }
 
 @mixin retina {
   @media (min-device-pixel-ratio: 2),

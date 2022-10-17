@@ -1,21 +1,24 @@
 .footer {
+ @include desktop {
+  display: flex;
+ }
   display: block;
   background-color: $basic-fon-site;
 }
 
 .container-footer {
   display: block;
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-  @media screen and (min-width: 1600px) {
+
+  @include desktop {
     display: flex;
     align-items: baseline;
+    max-width: 1170px;
   }
+  
 }
 
 .address-action__box {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -23,18 +26,13 @@
 }
 
 .footer-address {
-  @media screen and (min-width: 768px) {
-    // margin: 0 auto;
-  }
   display: block;
-  // margin-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
-  // width: 232px;
 }
 
 .logo-footer {
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     display: block;
   }
 
@@ -45,7 +43,7 @@
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   color: $white-text;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .address-list {
@@ -53,7 +51,7 @@
 }
 
 .address-link {
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     display: block;
     margin-left: auto;
     margin-right: auto;
