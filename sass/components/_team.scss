@@ -15,7 +15,7 @@
 }
 
 .team-title {
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     @include font(36px, 700, 1.2);
     padding-bottom: 50px;
   }
@@ -30,21 +30,19 @@
 
 .team-list {
   padding: 0;
-  justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 
 .team-item {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 354px;
     height: 100%;
     margin-right: 30px;
@@ -54,9 +52,9 @@
       margin-right: 0;
     }
 
-    &:nth-child(n + 3) {
-      margin-bottom: 0;
-    }
+    // &:nth-child(n + 3) {
+    //   margin-bottom: 0;
+    // }
   }
 
   @include desktop {
@@ -103,11 +101,11 @@
 .team-name {
   padding: 30px 0 24px 0;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding: 30px, 74px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     padding: 30px, 32px;
   }
 }

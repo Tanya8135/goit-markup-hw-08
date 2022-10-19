@@ -37,7 +37,8 @@
   }
 
   @include desktop {
-@include font (26px, 700, 1.2)
+@include font (26px, 700, 1.2);
+display: inline-flex;
   }
 
   display: block;
@@ -58,6 +59,12 @@
 .hidden-nav {
   @include tablet {
     display: flex;
+    margin-right: auto;
+    margin-left: 88px;
+  }
+
+  @include desktop {
+    display: inline-flex;
     margin-left: 88px;
   }
 

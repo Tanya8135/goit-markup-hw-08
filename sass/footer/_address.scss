@@ -1,6 +1,7 @@
 .footer {
  @include desktop {
   display: flex;
+  justify-content: center;
  }
   display: block;
   background-color: $basic-fon-site;
@@ -11,6 +12,7 @@
 
   @include desktop {
     display: flex;
+    justify-content: center;
     align-items: baseline;
     max-width: 1170px;
   }
@@ -27,6 +29,8 @@
 
 .footer-address {
   display: block;
+  margin-left: auto;
+  // margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }

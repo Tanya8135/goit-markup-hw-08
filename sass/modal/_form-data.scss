@@ -1,25 +1,37 @@
 .data {
+@include tablet {
+  padding: 40px 40px;
+}
+
   @include desktop {
     min-width: 528px;
   }
+
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 20px 20px;
   max-width: 450px;
 }
 
 .data__action {
   @include font(20, 700, 1.5);
+ 
+@include tablet {
+  padding: 0;
+}
+
   @include desktop {
     @include font(20, 700, 1.2);
+    padding: 0;
   }
+
   display: block;
   letter-spacing: 0.03em;
   text-align: center;
   color: $basic-text-color;
   margin: 0 auto;
   padding: 0 auto;
-  padding-top: 40px;
+  padding-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -160,6 +172,7 @@
   border-radius: 4px;
   outline: none;
   color: $basic-text-color;
+  resize: none;
 }
 
 .policy {

@@ -55,7 +55,7 @@
           </li>
         </ul>
 
-        <div class="mobile-menu_box is-hidden-1">
+        <div class=" mobile-menu_box is-hidden-1">
           <button class="btn-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg viewBox="0 0 32 32" width="40">
               <use xlink:href="./images/icons.svg#icon-menu-40px"></use>
@@ -86,24 +86,33 @@
             </svg>
           </button>
 
-          <ul class="mobile-menu">
-            <li class="menu-item"><a href="index.html" class="menu-link">Студія</a></li>
-            <li class="menu-item"><a href="portfolio.html" class="menu-link">Портфоліо</a></li>
-            <li class="menu-item"><a href="" class="menu-link">Контакти</a></li>
-          </ul>
+            <div class="mobile-menu">
+              <ul class="mobile-menu__list list">
+                <li class="mobile-menu__list"><a href="index.html" class="menu-link">Студія</a></li>
+                <li class="mobile-menu__list">
+                  <a href="portfolio.html" class="menu-link">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__list"><a href="" class="menu-link">Контакти</a></li>
+              </ul>
+            </div>
 
-          <ul class="menu-contacts list">
-            <li class="color-tel__list">
-              <a href="#tel:+380961111111" class="menu-link color-tel__link color-tel__accent">
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li class="">
-              <a href="#mailto:info@devstudio.com" class="menu-link color-tel__link">
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
+            <div class="menu-contacts">
+              <ul class="menu-contacts__list list">
+                <li class="menu-contacts__item">
+                  <a
+                    href="#tel:+380961111111"
+                    class="menu-link menu-contacts__link menu-contacts__accent"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-contacts__item">
+                  <a href="#mailto:info@devstudio.com" class="menu-link menu-contacts__link">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
 
           <div class="menu-social">
             <ul class="menu-social__list list">
@@ -193,6 +202,7 @@
           </ul>
         </div>
       </section>
+
       <!-- General -->
       <section class="general">
         <div class="conteiner general">
@@ -402,49 +412,54 @@
           <h2 class="clients-title">Постійні клієнти</h2>
           <div class="clients-container">
             <ul class="list clients-list">
-              <li class="clients-item">
-                <a class="clients-link" href="">
-                  <svg viewBox="0 0 28 32" width="41" class="clients-border">
-                    <use xlink:href="./images/icons.svg#icon-client1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="clients-item">
-                <a class="clients-link" href="">
-                  <svg viewBox="0 0 25 32" width="40" class="icon shape-codepen">
-                    <use xlink:href="./images/icons.svg#icon-client2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="clients-item">
-                <a class="clients-link" href="">
-                  <svg viewBox="0 0 34 32" width="44" class="icon shape-codepen">
-                    <use xlink:href="./images/icons.svg#icon-client3"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a class="clients-link" href="">
-                  <svg viewBox="0 0 65 32" width="84" class="icon shape-codepen">
-                    <use xlink:href="./images/icons.svg#icon-client4"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="clients-item">
-                <a class="clients-link" href="">
-                  <svg viewBox="0 0 43 32" width="63" class="icon shape-codepen">
-                    <use xlink:href="./images/icons.svg#icon-client5"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="clients-item">
-                <a class="clients-link" href="">
-                  <svg viewBox="0 0 67 32" width="94" class="icon shape-codepen">
-                    <use xlink:href="./images/icons.svg#icon-client6"></use>
-                  </svg>
-                </a>
-              </li>
+              <div class="test2">
+                <div class="test">
+                  <li class="clients-item">
+                    <a class="clients-link" href="">
+                      <svg viewBox="0 0 28 32" width="41" class="clients-border">
+                        <use xlink:href="./images/icons.svg#icon-client1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="clients-item">
+                    <a class="clients-link" href="">
+                      <svg viewBox="0 0 25 32" width="40" class="icon shape-codepen">
+                        <use xlink:href="./images/icons.svg#icon-client2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="clients-item">
+                    <a class="clients-link" href="">
+                      <svg viewBox="0 0 34 32" width="44" class="icon shape-codepen">
+                        <use xlink:href="./images/icons.svg#icon-client3"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </div>
+                <div class="test1">
+                  <li class="clients-item">
+                    <a class="clients-link" href="">
+                      <svg viewBox="0 0 65 32" width="84" class="icon shape-codepen">
+                        <use xlink:href="./images/icons.svg#icon-client4"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="clients-item">
+                    <a class="clients-link" href="">
+                      <svg viewBox="0 0 43 32" width="63" class="icon shape-codepen">
+                        <use xlink:href="./images/icons.svg#icon-client5"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="clients-item">
+                    <a class="clients-link" href="">
+                      <svg viewBox="0 0 67 32" width="94" class="icon shape-codepen">
+                        <use xlink:href="./images/icons.svg#icon-client6"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </div>
+              </div>
             </ul>
           </div>
         </div>
@@ -452,7 +467,7 @@
     </main>
     <footer class="footer">
       <div class="conteiner container-footer">
-        <div class="address-action__box">
+        <div class="address-action__box test-soc">
           <div class="footer-address">
             <a href="index.html" class="logo logo-footer logo-top">
               <span class="logo-span">Web</span>Studio
@@ -490,38 +505,41 @@
               </ul>
             </address>
           </div>
-          <div class="action-footer">
-            <p class="action-text"><b>приєднуйтесь</b></p>
-            <ul class="action__list list">
-              <li class="action__item">
-                <a class="action__link" href="">
-                  <svg viewBox="0 0 100 100" width="20">
-                    <use xlink:href="./images/icons.svg#icon-instagram-f"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="action__item">
-                <a class="action__link" href="">
-                  <svg viewBox="0 0 100 100" width="20">
-                    <use xlink:href="./images/icons.svg#icon-twitter-f"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="action__item">
-                <a class="action__link" href="">
-                  <svg viewBox="0 0 100 100" width="20">
-                    <use xlink:href="./images/icons.svg#icon-facebook-f"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="action__item">
-                <a class="action__link" href="">
-                  <svg viewBox="0 0 100 100" width="20">
-                    <use xlink:href="./images/icons.svg#icon-linkedin-f"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+
+          <div class="test-soc">
+            <div class="action-footer">
+              <p class="action-text"><b>приєднуйтесь</b></p>
+              <ul class="action__list list">
+                <li class="action__item">
+                  <a class="action__link" href="">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./images/icons.svg#icon-instagram-f"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="action__item">
+                  <a class="action__link" href="">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./images/icons.svg#icon-twitter-f"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="action__item">
+                  <a class="action__link" href="">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./images/icons.svg#icon-facebook-f"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="action__item">
+                  <a class="action__link" href="">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./images/icons.svg#icon-linkedin-f"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
