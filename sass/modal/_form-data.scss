@@ -1,24 +1,24 @@
 .data {
-@include tablet {
-  padding: 40px 40px;
-}
+  @include tablet {
+    padding: 40px 40px;
+  }
 
   @include desktop {
-    min-width: 528px;
+    max-width: 528px;
   }
 
   display: block;
   margin: 0;
-  padding: 20px 20px;
-  max-width: 450px;
+  padding: 15px 15px;
+  min-width: 320px;
 }
 
 .data__action {
   @include font(20, 700, 1.5);
- 
-@include tablet {
-  padding: 0;
-}
+
+  @include tablet {
+    padding: 0;
+  }
 
   @include desktop {
     @include font(20, 700, 1.2);
@@ -42,7 +42,7 @@
 
 .data-field {
   @include mobile {
-    max-width: 370px;
+    width: 370px;
   }
 
   @include desktop {
@@ -53,7 +53,6 @@
   margin: 0 auto;
   padding: 0 auto;
   margin-bottom: 28px;
-  max-width: 270px;
 
   font-size: 12px;
   line-height: 1.2;
@@ -227,12 +226,13 @@
 .policy__text {
   @include mobile {
     top: 20px;
-    left: 77px;
+    left: 67px;
   }
-  
+
   @include desktop {
     font-size: 14px;
     line-height: 1.7;
+    top: 13px;
     left: 77px;
   }
 
@@ -262,6 +262,11 @@
   letter-spacing: 0.03em;
   color: $accent-color;
 }
+
+// .checkbox-box {
+//   display: flex;
+//   justify-content: center;
+// }
 
 .btn-form {
   @include mobile {

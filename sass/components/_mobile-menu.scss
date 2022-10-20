@@ -88,9 +88,9 @@
 
 .mobile-menu {
   display: flex;
-  margin: 0;
   padding: 0;
   padding-top: 30px;
+  margin-left: 20px;
   margin-bottom: 64px;
 }
 
@@ -98,9 +98,7 @@
   @include font(40px, 500, 1.2);
 
   display: block;
-  margin: 0 auto;
   padding: 0;
-  margin-left: 20px;
   // padding-top: 48px;
   // margin-bottom: 312px;
   list-style: none;
@@ -121,22 +119,26 @@
 
   &:hover,
   &:focus {
-    text-decoration: underline;
     color: $accent-color;
     padding: 35px;
+    
   }
+}
+
+.current-menu {
+  color: $accent-color;
+
+  // transition: font-size 250ms linear;
 }
 
 .menu-contacts {
   display: flex;
-  // justify-content: center;
-  // margin: 0;
-  // padding: 0;
+  margin-left: 20px;
   margin-bottom: 64px;
 }
 
 .menu-contacts__list {
-  margin-left: 30px;
+  // margin-left: 30px;
   padding-bottom: 34px;
 }
 
@@ -167,14 +169,8 @@
 // }
 
 .menu-social {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 48px;
-
-  @include mobile {
-    margin-left: 40px;
-  }
+  display: flex;
+  margin-left: 20px;
 }
 
 .menu-social__item {

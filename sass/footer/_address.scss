@@ -55,6 +55,8 @@
 }
 
 .address-link {
+
+  
   @include desktop {
     display: block;
     margin-left: auto;
@@ -75,5 +77,9 @@
   &:focus {
     color: $accent-color;
     outline: none;
-  }
+  }  
+}
+
+.address-contacts {
+  color: $contacts-color;
 }

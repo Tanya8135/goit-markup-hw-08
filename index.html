@@ -55,7 +55,9 @@
           </li>
         </ul>
 
-        <div class=" mobile-menu_box is-hidden-1">
+        <!-- Mobile menu -->
+
+        <div class="mobile-menu_box is-hidden-1">
           <button class="btn-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg viewBox="0 0 32 32" width="40">
               <use xlink:href="./images/icons.svg#icon-menu-40px"></use>
@@ -86,33 +88,35 @@
             </svg>
           </button>
 
-            <div class="mobile-menu">
-              <ul class="mobile-menu__list list">
-                <li class="mobile-menu__list"><a href="index.html" class="menu-link">Студія</a></li>
-                <li class="mobile-menu__list">
-                  <a href="portfolio.html" class="menu-link">Портфоліо</a>
-                </li>
-                <li class="mobile-menu__list"><a href="" class="menu-link">Контакти</a></li>
-              </ul>
-            </div>
+          <div class="mobile-menu">
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__list">
+                <a href="index.html" class="menu-link current-menu">Студія</a>
+              </li>
+              <li class="mobile-menu__list">
+                <a href="portfolio.html" class="menu-link">Портфоліо</a>
+              </li>
+              <li class="mobile-menu__list"><a href="" class="menu-link">Контакти</a></li>
+            </ul>
+          </div>
 
-            <div class="menu-contacts">
-              <ul class="menu-contacts__list list">
-                <li class="menu-contacts__item">
-                  <a
-                    href="#tel:+380961111111"
-                    class="menu-link menu-contacts__link menu-contacts__accent"
-                  >
-                    +38 096 111 11 11</a
-                  >
-                </li>
-                <li class="menu-contacts__item">
-                  <a href="#mailto:info@devstudio.com" class="menu-link menu-contacts__link">
-                    info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <div class="menu-contacts">
+            <ul class="menu-contacts__list list">
+              <li class="menu-contacts__item">
+                <a
+                  href="#tel:+380961111111"
+                  class="menu-link menu-contacts__link menu-contacts__accent"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-contacts__item">
+                <a href="#mailto:info@devstudio.com" class="menu-link menu-contacts__link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
 
           <div class="menu-social">
             <ul class="menu-social__list list">
@@ -126,12 +130,13 @@
                   >Twitter<span class="menu-social__border"></span
                 ></a>
               </li>
-              <li class="menu-social__item">
-                <a href="" class="menu-social__link"
-                  >Facebook<span class="menu-social__border"></span
-                ></a>
-              </li>
               <div class="menu-social__box">
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link"
+                    >Facebook<span class="menu-social__border"></span
+                  ></a>
+                </li>
+
                 <li class="menu-social__item">
                   <a href="" class="menu-social__link"
                     >LinkedIn<span class="menu-social__border"></span
@@ -238,173 +243,187 @@
       <section class="team-our section">
         <div class="conteiner team">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="site-nav list team-list">
-            <li class="team-item team-bgc">
-              <picture>
+            <ul class="site-nav list team-list team-box">
+              <li class="team-item team-bgc">
+                <!-- <picture>
                 <source
                   srcset="./images/human1-1x.jpg 1x, ./images/human1-2x.jpg 2x"
-                  media="(min-width: 1600px)"
-                />
+                  media="(min-width: 1200px)"/>
 
                 <source
                   srcset="./images/human1-1x.jpg 1x, ./images/human1-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
+                  media="(min-width: 768px)"/>
 
                 <source
                   srcset="./images/human1-1x.jpg 1x, ./images/human1-2x.jpg 2x"
-                  media="(max-width: 767px)"
-                />
-              </picture>
+                  media="(max-width: 767px)"/>
+              </picture> -->
 
-              <img src="./images/human1-1x.jpg" alt="Ігор Дем'яненко" />
-              <div class="team-name">
-                <h3 class="team-name__title">Ігор Дем'яненко</h3>
-                <p class="team-name__text">Product Designer</p>
-                <ul class="team-social list">
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20">
-                        <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
-                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
-                        <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20">
-                        <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-item team-bgc">
-              <img src="./images/human2-1x.jpg" alt="Ольга Рєпіна" />
-              <div class="team-name">
-                <h3 class="team-name__title">Ольга Рєпіна</h3>
-                <p class="team-name__text">Frontend Developer</p>
-                <ul class="team-social list">
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20">
-                        <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20">
-                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
-                        <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
-                        <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-item team-bgc">
-              <img src="./images/human3-1x.jpg" alt="Микола Тарасов" />
-              <div class="team-name">
-                <h3 class="team-name__title">Микола Тарасов</h3>
-                <p class="team-name__text">Marketing</p>
-                <ul class="team-social list">
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20">
-                        <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20">
-                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
-                        <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
-                        <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-item team-bgc">
-              <img src="./images/human4-1x.jpg" alt="Михайло Єрмаков" />
-              <div class="team-name">
-                <h3 class="team-name__title">Михайло Єрмаков</h3>
-                <p class="team-name__text">UI Designer</p>
-                <ul class="team-social list">
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20">
-                        <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20">
-                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
-                        <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-social__item">
-                    <a class="team-social__icon" href="">
-                      <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
-                        <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+                <img
+                  srcset="./images/human1-1x.jpg 1x, ./images/human1-2x.jpg 2x"
+                  src="./images/human1-1x.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+
+                <div class="team-name">
+                  <h3 class="team-name__title">Ігор Дем'яненко</h3>
+                  <p class="team-name__text">Product Designer</p>
+                  <ul class="team-social list">
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20">
+                          <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                          <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                          <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20">
+                          <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="team-item team-bgc">
+                <img
+                  srcset="./images/human2-1x.jpg 1x, ./images/human2-2x.jpg 2x"
+                  src="./images/human2-1x.jpg"
+                  alt="Ольга Рєпіна"
+                />
+                <div class="team-name">
+                  <h3 class="team-name__title">Ольга Рєпіна</h3>
+                  <p class="team-name__text">Frontend Developer</p>
+                  <ul class="team-social list">
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20">
+                          <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20">
+                          <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                          <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                          <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="team-item team-bgc">
+                <img
+                  srcset="./images/human3-1x.jpg 1x, ./images/human3-2x.jpg 2x"
+                  src="./images/human3-1x.jpg"
+                  alt="Микола Тарасов"
+                />
+                <div class="team-name">
+                  <h3 class="team-name__title">Микола Тарасов</h3>
+                  <p class="team-name__text">Marketing</p>
+                  <ul class="team-social list">
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20">
+                          <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20">
+                          <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                          <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                          <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="team-item team-bgc">
+                <img
+                  srcset="./images/human4-1x.jpg 1x, ./images/human4-2x.jpg 2x"
+                  src="./images/human4-1x.jpg"
+                  alt="Михайло Єрмаков"
+                />
+                <div class="team-name">
+                  <h3 class="team-name__title">Михайло Єрмаков</h3>
+                  <p class="team-name__text">UI Designer</p>
+                  <ul class="team-social list">
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20">
+                          <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20">
+                          <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                          <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-social__item">
+                      <a class="team-social__icon" href="">
+                        <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                          <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
         </div>
       </section>
       <section class="section clients">
@@ -623,16 +642,18 @@
           </label>
 
           <label class="policy">
-            <input class="policy__checkbox" type="checkbox" name="policy" value="css" />
-            <span class="policy__icon">
-              <!-- <svg viewBox="0 0 100 100" width="15" hieght="15" class="person color-check">
+            <div class="checkbox-box">
+              <input class="policy__checkbox" type="checkbox" name="policy" value="css" />
+              <span class="policy__icon">
+                <!-- <svg viewBox="0 0 100 100" width="15" hieght="15" class="person color-check">
             <use xlink:href="./images/icons.svg#icon-check"></use>
           </svg> -->
-            </span>
-            <span class="policy__text"
-              >Погоджуюся з розсилкою та приймаю
-              <a href="/" class="policy__link">Умови договору</a>
-            </span>
+              </span>
+              <span class="policy__text"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="/" class="policy__link">Умови договору</a>
+              </span>
+            </div>
           </label>
 
           <button type="submit" class="hero-btn btn-form">Відправити</button>
