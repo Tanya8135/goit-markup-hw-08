@@ -15,6 +15,13 @@
 
 .modal-hero {
   @include mobile {
+    // min-width: 320px;
+    // min-height: 450px;
+    min-width: 450px;
+    min-height: 450px;
+  }
+
+  @include tablet {
     min-width: 450px;
     min-height: 450px;
   }
@@ -24,7 +31,7 @@
     min-height: 581px;
   }
 
-  min-width: 290px;
+  // min-width: 290px;
 
   background-color: $modal-white-bgc;
 

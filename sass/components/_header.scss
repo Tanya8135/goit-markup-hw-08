@@ -1,3 +1,8 @@
+.page-header {
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
 .header-border {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -28,17 +33,21 @@
     justify-content: center;
     align-items: center;
   }
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .logo {
-  @include font (24px, 700, 1.2);
+  @include font(24px, 700, 1.2);
   @include tablet {
     padding: 26px 0px 26px 15px;
   }
 
   @include desktop {
-@include font (26px, 700, 1.2);
-display: inline-flex;
+    @include font(26px, 700, 1.2);
+    padding: 24px 25px;
   }
 
   display: block;
@@ -113,17 +122,18 @@ display: inline-flex;
 .contacts-link {
   @include tablet {
     text-decoration: none;
-    padding-bottom: 10px;
   }
 }
 
-.auth-nav {
-@include tablet {
-  display: block;
-}
+.contact-list {
+  display: none;
+  @include tablet {
+    display: block;
+  }
 
   @include desktop {
     display: flex;
+    padding: 32px 32px;
   }
   margin-left: auto;
 
@@ -135,7 +145,22 @@ display: inline-flex;
   }
 }
 
+.contacts-item {
+  @include tablet {
+    padding-bottom: 10px;
+
+  &:nth-child(2n) {
+    padding-bottom: 0;
+  }
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
 .contacts-header {
+  text-decoration: none;
   color: $secondary-color;
 }
 
@@ -144,9 +169,9 @@ display: inline-flex;
 }
 
 .contact-svg {
-@include desktop {
-  margin-left: 30px;
-}
+  @include desktop {
+    margin-left: 30px;
+  }
 
   margin: 0;
   padding: 0;
@@ -166,6 +191,3 @@ display: inline-flex;
     outline: none;
   }
 }
-
-
-

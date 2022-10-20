@@ -1,7 +1,7 @@
 .conteiner {
   margin: 0 auto;
-  min-width: 320px;
   max-width: 1170px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   // margin-left: auto;
@@ -30,9 +30,9 @@
   list-style: none;
 }
 
-// .site-nav {
-//   display: flex;
-// }
+.site-nav {
+  display: inline-flex;
+}
 
 // .indent {
 //   margin-left: 94px;

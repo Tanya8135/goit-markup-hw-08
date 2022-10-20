@@ -18,9 +18,7 @@
 .clients-container {
   padding-right: 15px;
   padding-left: 15px;
-  // display: flex;
-  // width: 170px;
-  // height: 92px;
+  width: 100%;
 }
 
 .clients-list {
@@ -30,7 +28,7 @@
   justify-content: space-evenly;
   margin: auto;
   padding: 0;
-  max-width: 320px;
+  // max-width: 320px;
 }
 
 //   @include tablet {
@@ -130,7 +128,7 @@
   }
 
   @include tablet {
-    max-width: 226px;
+    // max-width: 226px;
     margin-right: 30px;
 
     // &:nth-child(n) {
@@ -147,7 +145,7 @@
   }
 
   @include desktop {
-    max-width: 170px;
+    // max-width: 170px;
     margin-right: 30px;
 
     &:nth-child(3n) {

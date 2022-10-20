@@ -20,7 +20,7 @@
 
   <body>
     <header class="header-border page-header">
-      <div class="conteiner main-nav mobile-menu_box">
+      <div class="conteiner main-nav">
         <nav class="main-nav">
           <a href="index.html" class="logo"><span class="logo-span">Web</span>Studio</a>
           <ul class="site-nav nav-item list hidden-nav">
@@ -30,11 +30,11 @@
           </ul>
         </nav>
 
-        <ul class="auth-nav site-nav list hidden-contacts">
-          <li class="item">
+        <ul class="contact-list site-nav list">
+          <li class="contacts-item item">
             <a
               href="#mailto:info@devstudio.com"
-              class="contacts-header contacts-link contact-icon color-contact"
+              class="contacts-header contact-icon color-contact"
             >
               <svg viewBox="0 0 100 100" width="16" class="contact-svg">
                 <use xlink:href="./images/icons.svg#icon-mail"></use>
@@ -42,10 +42,10 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="contacts-item item">
             <a
               href="#tel:+380961111111"
-              class="contacts-header contacts-link contact-icon color-contact"
+              class="contacts-header contact-icon color-contact"
             >
               <svg viewBox="0 0 100 100" width="16" class="contact-svg">
                 <use xlink:href="./images/icons.svg#icon-tel"></use>
@@ -56,25 +56,25 @@
         </ul>
 
         <!-- Mobile menu -->
-
-        <div class="mobile-menu_box is-hidden-1">
-          <button class="btn-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg viewBox="0 0 32 32" width="40">
+            <!-- <svg viewBox="0 0 32 32" width="40">
+              <use xlink:href="./images/icons.svg#icon-menu-40px"></use>
+            </svg> -->
+            
+            <!-- BTN open входит до div conteiner-->
+            <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+         <svg viewBox="0 0 32 32" width="40">
               <use xlink:href="./images/icons.svg#icon-menu-40px"></use>
             </svg>
-          </button>
-
-          <!-- <button class="btn-menu">
-  <svg viewBox="0 0 32 32" width="40">
-    <use xlink:href="./images/icons.svg#icon-menu-40px"></use>
-  </svg>
-  </button> -->
-        </div>
-
+        </button>
+ </div>
+        <!-- BTN close -->
         <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="btn-menu-close js-close-menu">
+          <button class="menu-toggle js-close-menu">
             <svg
-              fill="currentColor"
+              
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -88,66 +88,55 @@
             </svg>
           </button>
 
+          <!-- Mobile menu -->
           <div class="mobile-menu">
-            <ul class="mobile-menu__list list">
-              <li class="mobile-menu__list">
-                <a href="index.html" class="menu-link current-menu">Студія</a>
-              </li>
-              <li class="mobile-menu__list">
-                <a href="portfolio.html" class="menu-link">Портфоліо</a>
-              </li>
-              <li class="mobile-menu__list"><a href="" class="menu-link">Контакти</a></li>
-            </ul>
+          <ul class="mobile-menu__list">
+            <li><a href="index.html" class="mobile-menu__link current-menu">
+              Студія</a></li>
+            <li><a href="portfolio.html" class="mobile-menu__link">
+              Портфоліо</a></li>
+            <li><a href="" class="mobile-menu__link">
+              Контакти</a></li>
+          </ul>
           </div>
 
           <div class="menu-contacts">
-            <ul class="menu-contacts__list list">
-              <li class="menu-contacts__item">
-                <a
-                  href="#tel:+380961111111"
-                  class="menu-link menu-contacts__link menu-contacts__accent"
-                >
-                  +38 096 111 11 11</a
-                >
-              </li>
-              <li class="menu-contacts__item">
-                <a href="#mailto:info@devstudio.com" class="menu-link menu-contacts__link">
-                  info@devstudio.com</a
-                >
-              </li>
-            </ul>
+          <ul class="menu-contacts__list">
+            <li class="menu-contacts__item"><a href="#tel:+380961111111" 
+              class="menu-contacts__link menu-contacts__link--accent">
+              +38 096 111 11 11</a></li>
+            <li class="menu-contacts__item"><a href="#mailto:info@devstudio.com" 
+              class="menu-contacts__link">
+              info@devstudio.com</a></li>
+          </ul>
           </div>
 
           <div class="menu-social">
-            <ul class="menu-social__list list">
-              <li class="menu-social__item">
-                <a href="" class="menu-social__link"
-                  >Instagram<span class="menu-social__border"></span
-                ></a>
-              </li>
-              <li class="menu-social__item">
-                <a href="" class="menu-social__link"
-                  >Twitter<span class="menu-social__border"></span
-                ></a>
-              </li>
-              <div class="menu-social__box">
-                <li class="menu-social__item">
-                  <a href="" class="menu-social__link"
-                    >Facebook<span class="menu-social__border"></span
-                  ></a>
-                </li>
+          <ul class="menu-social__list">
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Instagram
+                <span class="menu-social__border"></span>
+              </a></li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Twitter
+                <span class="menu-social__border"></span>
+              </a></li>
 
-                <li class="menu-social__item">
-                  <a href="" class="menu-social__link"
-                    >LinkedIn<span class="menu-social__border"></span
-                  ></a>
-                </li>
+              <div class="menu-social__box">
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Facebook
+                <span class="menu-social__border"></span>
+              </a></li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">LinkedIn
+                <span class="menu-social__border"></span>
+              </a></li>
               </div>
-            </ul>
-          </div>
+          </ul>
         </div>
-      </div>
+        </div>     
     </header>
+
     <main class="main">
       <section class="hero">
         <div class="conteiner hero-box">
@@ -386,8 +375,7 @@
                 <img
                   srcset="./images/human4-1x.jpg 1x, ./images/human4-2x.jpg 2x"
                   src="./images/human4-1x.jpg"
-                  alt="Михайло Єрмаков"
-                />
+                  alt="Михайло Єрмаков"/>
                 <div class="team-name">
                   <h3 class="team-name__title">Михайло Єрмаков</h3>
                   <p class="team-name__text">UI Designer</p>
