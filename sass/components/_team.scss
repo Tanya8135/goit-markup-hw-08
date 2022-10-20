@@ -6,12 +6,11 @@
 }
 
 .team-box {
-  @include desktop {
+  @include tablet {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
   }
-  
 }
 
 .team-our {
