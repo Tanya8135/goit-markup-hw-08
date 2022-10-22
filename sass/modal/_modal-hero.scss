@@ -14,6 +14,8 @@
 }
 
 .modal-hero {
+  max-width: 320px;
+
   @include mobile {
     // min-width: 320px;
     // min-height: 450px;
@@ -42,13 +44,17 @@
 }
 
 .close-btn {
+  @include desktop {
+    cursor: pointer;
+  }
   position: absolute;
   right: 10px;
   top: 10px;
   background-color: $modal-white-bgc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  fill: var(--black-text-color);
+  fill: $close-btn-black;
   border-radius: 50%;
+  cursor: none;
   width: 30px;
   height: 30px;
 
@@ -58,5 +64,6 @@
 
   &:hover {
     fill: $accent-color;
+    background-color: transparent;
   }
 }

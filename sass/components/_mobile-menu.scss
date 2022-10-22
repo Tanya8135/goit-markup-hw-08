@@ -23,15 +23,15 @@
   padding: 0;
   fill: $basic-text-color;
   background-color: transparent;
-  cursor: pointer;
+  cursor: none;
   border: none;
   border-radius: 50%;
   outline: none;
 
-  // &:hover, 
-  // &:focus {
-  //   background-color: rgba(0, 0, 0, 0.1);
-  // }
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
 }
 
 .menu-container {
@@ -61,7 +61,6 @@
 
 .mobile-menu {
   display: flex;
-  min-height: 40%;  
 }
 
 .mobile-menu__list {
@@ -71,17 +70,16 @@
 }
 
 .mobile-menu__link {
-  @include font (40px, 500, 1.2);
+  @include mobile {
+    @include font(40px, 500, 1.2);
+  }
+
+  @include font(35px, 500, 1.2);
 
   display: block;
   padding: 10px;
   color: $basic-fon-site;
   text-decoration: none;
-
-  &:hover, 
-  &:focus {
-    text-decoration: underline;
-  }
 }
 
 .current-menu {
@@ -89,13 +87,13 @@
 }
 
 .menu-contacts {
- display: block;
- min-height: 40%;
+  display: block;
+  margin: 0;
 }
 
 .menu-contacts__list {
   padding: 0;
-  margin:  0 auto;
+  margin: 0 auto;
   list-style: none;
 }
 
@@ -105,19 +103,22 @@
 }
 
 .menu-contacts__link {
-  @include font (24px, 500, 1.2);
+  @include font(24px, 500, 1.2);
   color: $secondary-color;
   text-decoration: none;
 
   &--accent {
-    @include font (34px, 500, 1.2);
+    @include font(28px, 500, 1.2);
     color: $accent-color;
+
+    @include mobile {
+      @include font(34px, 500, 1.2);
+    }
   }
 }
 
 .menu-social {
   display: flex;
-  padding-left: 10px;
 }
 
 .menu-social__list {
@@ -131,7 +132,11 @@
 }
 
 .menu-social__link {
-  @include font (18px, 500, 1.2);
+  @include font(12px, 500, 1.2);
+
+  @include mobile {
+    @include font(18px, 500, 1.2);
+  }
 
   color: $accent-color;
   text-decoration: none;
@@ -142,12 +147,21 @@
   margin: 0 10px 0 10px;
 }
 
-.menu-social__box {
-  @media screen and (max-width: 479px) {
-    padding-top: 10px;
-  }
-  
-@media screen and (min-width: 480px) {
-  display: inline-flex;
-}
+// .menu-social__box {
+//   @media screen and (max-width: 479px) {
+//     display: inline-flex;
+//     // padding-top: 10px;
+//   }
+
+// @media screen and (min-width: 480px) {
+//   display: inline-flex;
+// }
+// }
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100%;
 }

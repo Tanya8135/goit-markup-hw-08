@@ -11,13 +11,19 @@
   //   // max-width: 528px;
   // }
 
+@include min-mobile {
+  max-width: 300px;
+  max-height: 609px;
+}
+
+  @include mobile {
+    max-height: 609px;
+  }
+
   display: block;
   margin: 0;
   padding: 15px 15px;
-  // min-width: 250px;
-  // width: 100%;
-  height: 100%;
-  min-width: 320px;
+  
 }
 
 .data__action {
@@ -49,7 +55,11 @@
 
 .data-field {
   @include mobile {
-    width: 470px;
+    max-width: 370px;
+  }
+
+  @include tablet {
+    max-width: 370px;
   }
 
   @include desktop {
@@ -58,7 +68,6 @@
   display: block;
   position: relative;
   margin: 0 auto;
-  padding: 0 auto;
   margin-bottom: 28px;
 
   font-size: 12px;
@@ -68,12 +77,21 @@
 }
 
 .data-field__input {
+
+@include min-mobile {
+  min-width: 270px;
+}
+
+  @include desktop {
+  min-width: 448px;
+  }
+  // display: flex;
   margin: 0;
   padding: 10px 12px 10px 42px;
-  justify-content: center;
-  align-items: baseline;
+  // justify-content: center;
+  // align-items: baseline;
   // min-width: 270px;
-  width: 100%;
+  min-width: 370px;
   font: inherit;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -166,7 +184,7 @@
 }
 
 .comment-plh {
-  width: 100%;
+  min-width: 370px;
   // min-width: 270px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -175,8 +193,12 @@
   color: $basic-text-color;
   resize: none;
 
+  @include min-mobile {
+    min-width: 270px;
+  }
+
   @include tablet {
-    min-width: 448px;
+    min-width: 370px;
   }
 
   @include desktop {
@@ -185,13 +207,17 @@
 }
 
 .policy {
+  @include desktop {
+    cursor: pointer;
+  }
+
   display: flex;
   align-items: baseline;
   position: relative;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
+  cursor: none;
 }
 
 .policy__checkbox {
@@ -214,19 +240,27 @@
 }
 
 .policy__icon {
+  @include min-mobile {
+    left: 15px;
+  }
+
   @include mobile {
-    top: 20px;
-    left: 52px;
+    left: 40px;
+  }
+
+  @include tablet {
+    left: 40px;
   }
 
   @include desktop {
     left: 52px;
   }
+
   display: inline-block;
   width: 15px;
   height: 15px;
   position: relative;
-  top: 14px;
+  top: 20px;
   left: 50px;
   transform: translate(-50%, -50%);
   border: 2px solid $basic-text-color;
@@ -234,22 +268,30 @@
 }
 
 .policy__text {
+  @include min-mobile {
+    left: 30px;
+  }
+
   @include mobile {
     top: 20px;
-    left: 67px;
+    left: 64px;
+  }
+
+  @include tablet {
+    left: 64px;
   }
 
   @include desktop {
     font-size: 14px;
     line-height: 1.7;
-    top: 13px;
+    top: 20px;
     left: 77px;
   }
 
   position: absolute;
   align-items: baseline;
-  top: 18px;
-  left: 65px;
+  top: 20px;
+  left: 0px;
   transform: translate(-0%, -40%);
 
   font-size: 12px;

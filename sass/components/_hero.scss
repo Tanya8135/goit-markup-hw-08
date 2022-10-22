@@ -71,6 +71,9 @@
 }
 
 .hero-btn {
+  @include desktop {
+    cursor: pointer;
+  }
   @include font(16px, 700, 1.9);
 
   display: flex;
@@ -85,7 +88,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  cursor: pointer;
+  cursor: none;
   // outline: none;
 
   &:focus {
