@@ -6,9 +6,18 @@
 }
 
 .team-box {
-  display: block;
-  
+  @include mobile {
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
   @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include desktop {
     display: flex;
     justify-content: center;
   }
@@ -40,6 +49,11 @@
 
 .team-list {
   padding: 0;
+  display: block;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // width: 450px;
 
   @include tablet {
     display: flex;

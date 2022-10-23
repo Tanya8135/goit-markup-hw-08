@@ -37,6 +37,8 @@
 .logo-footer {
   @include desktop {
     display: block;
+    padding: 0;
+    padding-bottom: 20px;
   }
 
   @include font(24px, 700, 1.2);

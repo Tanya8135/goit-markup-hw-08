@@ -1,13 +1,15 @@
 .general {
   display: none;
   margin: 0 auto;
-  padding-bottom: 94px;
+  padding: 0;
+  // padding-bottom: 94px;
 }
 
 @include desktop {
   .general {
     display: block;
     margin: 0 auto;
+    padding: 0;
     padding-bottom: 94px;
   }
 

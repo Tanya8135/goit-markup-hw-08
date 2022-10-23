@@ -6,7 +6,7 @@
   justify-content: center;
   background: $basic-fon-site;
   text-align: center;
-  max-width: 480px;
+  max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/mobile/bg-fon-mobile_1x.jpg);
 
@@ -18,13 +18,13 @@
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
-  padding: 60px 118px;
+  padding: 118px 0 118px 0;
 
   @include tablet {
-    max-width: 768px;
+    // max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/tablet/bg-fon-tablet_1x.jpg);
-    padding: 118px 204px;
+    // padding: 118px 0 118px 0;
 
     @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -33,7 +33,7 @@
   }
 
   @include desktop {
-    max-width: 1600px;
+    // max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/bg-fon_1x.jpg);
 
@@ -55,7 +55,7 @@
     letter-spacing: 0.06;
     text-transform: uppercase;
     color: $hero-text;
-    min-width: 320px;
+    max-width: 360px;
 
     @include desktop {
       margin: 0 auto;
@@ -65,7 +65,7 @@
       line-height: 1.4;
       letter-spacing: 0.06;
       color: $hero-text;
-      width: 696px;
+      max-width: 696px;
     }
   }
 }

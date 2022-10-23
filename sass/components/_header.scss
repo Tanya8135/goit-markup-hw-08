@@ -141,7 +141,7 @@
     @include tablet {
       margin-left: 0;
     }
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
@@ -170,7 +170,7 @@
 
 .contact-svg {
   @include desktop {
-    margin-left: 30px;
+    // margin-left: 30px;
   }
 
   margin: 0;

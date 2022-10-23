@@ -89,7 +89,7 @@
           </button>
 
           <!-- Mobile menu -->
-          <div class="flex">
+          <div class="mobile-menu__box">
           <div class="mobile-menu">
           <ul class="mobile-menu__list">
             <li><a href="index.html" class="mobile-menu__link current-menu">
@@ -202,7 +202,7 @@
 
       <!-- General -->
       <section class="general">
-        <div class="conteiner general">
+        <div class="conteiner">
           <p class="general-title">Чим ми займаємося</p>
           <ul class="site-nav list general-list">
             <li class="general-item">
@@ -475,9 +475,10 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
       <div class="conteiner container-footer">
-        <div class="address-action__box test-soc">
+        <div class="address-action__box social-box">
           <div class="footer-address">
             <a href="index.html" class="logo logo-footer logo-top">
               <span class="logo-span">Web</span>Studio
@@ -516,7 +517,7 @@
             </address>
           </div>
 
-          <div class="test-soc">
+          <div class="social-box">
             <div class="action-footer">
               <p class="action-text"><b>приєднуйтесь</b></p>
               <ul class="action__list list">
@@ -584,16 +585,21 @@
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-hero">
+        
+        <div class="btn-box__close">
         <button type="button" class="close-btn" data-modal-close>
           <svg viewBox="0 0 32 32" width="11">
             <use xlink:href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        </div>
 
         <form class="data">
+          <div class="data-box">
           <b class="data__action"
             >Залиште свої дані, ми вам <span class="data__action-br">передзвонимо</span></b
           >
+          </div>
 
           <label class="data-field">
             <input type="text" name="name" class="data-field__input" placeholder=" " />
@@ -632,6 +638,7 @@
             <span class="comment__input">Введіть текст</span>
           </label>
 
+          <div class="policy-box">
             <label class="policy">
             <div class="checkbox-box">
               <input class="policy__checkbox" type="checkbox" name="policy" value="css" />
@@ -646,9 +653,11 @@
               </span>
             </div>
           </label>          
+          </div>
 
           <button type="submit" class="hero-btn btn-form">Відправити</button>
         </form>
+
       </div>
     </div>
 

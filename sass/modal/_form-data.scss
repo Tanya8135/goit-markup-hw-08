@@ -10,6 +10,8 @@
   //   // height: 100%;
   //   // max-width: 528px;
   // }
+  // overflow: auto;
+  // height: 100vh;
 
 @include min-mobile {
   max-width: 300px;
@@ -23,7 +25,6 @@
   display: block;
   margin: 0;
   padding: 15px 15px;
-  
 }
 
 .data__action {
