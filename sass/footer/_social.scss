@@ -65,6 +65,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .action__item {
@@ -82,7 +83,6 @@
 
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
