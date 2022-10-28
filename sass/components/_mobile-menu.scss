@@ -30,6 +30,7 @@
 
   &:hover,
   &:focus {
+    fill: $accent-color;
     background-color: transparent;
   }
 }

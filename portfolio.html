@@ -19,48 +19,126 @@
   </head>
 
   <body>
-    <!-- Add header -->
-    <header class="header-border">
+    <!-- Header -->
+    <header class="header-border page-header">
       <div class="conteiner main-nav">
         <nav class="main-nav">
           <a href="index.html" class="logo"><span class="logo-span">Web</span>Studio</a>
-          <ul class="site-nav nav-item list indent">
+          <ul class="site-nav nav-item list hidden-nav">
             <li class="item"><a href="index.html" class="nav-link">Студія</a></li>
             <li class="item"><a href="portfolio.html" class="nav-link current">Портфоліо</a></li>
             <li class="item"><a href="" class="nav-link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="auth-nav site-nav list indent">
-          <li class="item">
+
+        <ul class="contact-list site-nav list">
+          <li class="contacts-item item">
             <a
               href="#mailto:info@devstudio.com"
-              class="nav-link contacts-header contact-icon color-contact"
+              class="contacts-header contact-icon color-contact"
             >
-              <svg viewBox="0 0 100 100" width="16" class="contact-svg icon shape-codepen">
+              <svg viewBox="0 0 100 100" width="16" class="contact-svg">
                 <use xlink:href="./images/icons.svg#icon-mail"></use>
               </svg>
-              info@devstudio.com
-            </a>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="item">
+          <li class="contacts-item item">
             <a
               href="#tel:+380961111111"
-              class="nav-link contacts-header contact-icon color-contact"
+              class="contacts-header contact-icon color-contact"
             >
-              <svg viewBox="0 0 100 100" width="16" class="contact-svg icon shape-codepen">
+              <svg viewBox="0 0 100 100" width="16" class="contact-svg">
                 <use xlink:href="./images/icons.svg#icon-tel"></use>
               </svg>
-              +38 096 111 11 11
-            </a>
+              +38 096 111 11 11</a
+            >
           </li>
-        </ul>
-      </div>
+        </ul>           
+            <!-- BTN open входит до div conteiner-->
+            <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+         <svg viewBox="0 0 32 32" width="40">
+              <use xlink:href="./images/icons.svg#icon-menu-40px"></use>
+            </svg>
+        </button>
+ </div>
+        <!-- BTN close -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Mobile menu -->
+          <div class="mobile-menu__box">
+          <div class="mobile-menu">
+          <ul class="mobile-menu__list">
+            <li><a href="index.html" class="mobile-menu__link">
+              Студія</a></li>
+            <li><a href="portfolio.html" class="mobile-menu__link current-menu">
+              Портфоліо</a></li>
+            <li><a href="" class="mobile-menu__link">
+              Контакти</a></li>
+          </ul>
+          </div>
+
+          <div class="menu-contacts">
+          <ul class="menu-contacts__list">
+            <li class="menu-contacts__item"><a href="#tel:+380961111111" 
+              class="menu-contacts__link menu-contacts__link--accent">
+              +38 096 111 11 11</a></li>
+            <li class="menu-contacts__item"><a href="#mailto:info@devstudio.com" 
+              class="menu-contacts__link">
+              info@devstudio.com</a></li>
+          </ul>
+          </div>
+
+          <div class="menu-social">
+          <ul class="menu-social__list">
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Instagram
+                <span class="menu-social__border"></span>
+              </a></li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Twitter
+                <span class="menu-social__border"></span>
+              </a></li>
+
+              
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Facebook
+                <span class="menu-social__border"></span>
+              </a></li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">LinkedIn
+                <span class="menu-social__border"></span>
+              </a></li>
+              
+          </ul>
+        </div>
+        </div>
+
+        </div>     
     </header>
     <main>
       <!-- Add section -->
       <section class="cards">
         <div class="conteiner">
-          <ul class="filter-list about-cards">
+          <ul class="filter-list">
             <li class="filter-item"><button type="button" class="btn-filter">Усі</button></li>
             <li class="filter-item"><button type="button" class="btn-filter">Веб-сайти</button></li>
             <li class="filter-item"><button type="button" class="btn-filter">Додатки</button></li>
@@ -72,7 +150,26 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img src="./images/portfolio/technoquack.jpg" alt="Технокряк" />
+                  <!-- <picture>
+                    <source srcset="./images/portfolio/370/technoquack-370.jpg 1x,
+                    ./images/portfolio/370/technoquack@2x-370.jpg 2x"
+                    media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio/370/technoquack-370.jpg 1x,
+                    ./images/portfolio/370/technoquack@2x-370.jpg 2x"
+                    width="290"
+                    media="(min-width: 320px)">
+
+                    <img src="./images/portfolio/370/technoquack-370.jpg" alt="Технокряк">
+                  </picture> -->
+                  <img 
+                  srcset="./images/portfolio/370/technoquack-370.jpg 370w,
+                  ./images/portfolio/354/technoquack-354.jpg 354w,
+                  ./images/portfolio/450/technoquack-450.jpg 450w,
+                  ./images/portfolio/370/technoquack@2x-370.jpg 740w,
+                  ./images/portfolio/354/technoquack-354@2x.jpg 708w,
+                  ./images/portfolio/450/technoquack-450@2x.jpg 900w"
+                  sizes="(min-width: 1920px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 225px"
+                  src="./images/portfolio/370/technoquack-370.jpg" alt="Технокряк" />
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -88,7 +185,15 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img src="./images/portfolio/poster.jpg" alt="Постер New Orlean vs Golden Star" />
+                  <img 
+                  srcset="./images/portfolio/370/poster-370.jpg 370w,
+                  ./images/portfolio/354/poster-354.jpg 354w,
+                  ./images/portfolio/450/poster-450.jpg 450w,
+                  ./images/portfolio/370/poster@2x-370.jpg 740w,
+                  ./images/portfolio/354/poster-354@2x.jpg 708w,
+                  ./images/portfolio/450/poster-450@2x.jpg 900w"
+                  sizes="(min-width: 1920px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 225px"
+                  src="./images/portfolio/370/poster-370.jpg" alt="Постер New Orlean vs Golden Star" />
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -104,7 +209,15 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood" />
+                  <img 
+                  srcset="./images/portfolio/370/seafood-370.jpg 370w,
+                  ./images/portfolio/354/seafood-354.jpg 354w,
+                  ./images/portfolio/450/seafood-450.jpg 450w,
+                  ./images/portfolio/370/seafood@2x370.jpg 740w,
+                  ./images/portfolio/354/seafood-354@2x.jpg 708w,
+                  ./images/portfolio/450/seafood-450@2x.jpg 900w"
+                  sizes="(min-width: 1920px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 354px"
+                  src="./images/portfolio/370/seafood-370.jpg" alt="Ресторан Seafood"/>
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -120,7 +233,15 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img src="./images/portfolio/project-prime.jpg" alt="Проєкт Prime" width="370" />
+                  <img 
+                  srcset="./images/portfolio/370/project-prime-370.jpg 370w,
+                  ./images/portfolio/354/project-prime-354.jpg 354w,
+                  ./images/portfolio/450/project-prime-450.jpg 450w,
+                  ./images/portfolio/370/project-prime@2x-370.jpg 740w,
+                  ./images/portfolio/354/project-prime-354@2x.jpg 708w,
+                  ./images/portfolio/450/project-prime-450@2x.jpg 900w"
+                  sizes="(min-width: 1920px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 354px"
+                  src="./images/portfolio/370/project-prime-370.jpg" alt="Проєкт Prime" />
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -136,7 +257,15 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img src="./images/portfolio/boxes.jpg" alt="Проєкт Boxes" width="370" />  
+                  <img 
+                  srcset="./images/portfolio/370/boxes-370.jpg 370w,
+                  ./images/portfolio/354/boxes-354.jpg 354w,
+                  ./images/portfolio/450/boxes-450.jpg 450w,
+                  ./images/portfolio/370/boxes@2x-370.jpg 740w,
+                  ./images/portfolio/354/boxes-354@2x.jpg 708w,
+                  ./images/portfolio/450/boxes-450@2x.jpg 900w"
+                  sizes="(min-width: 1920px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 354px"
+                  src="./images/portfolio/370/boxes-370.jpg" alt="Проєкт Boxes" />
                   <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -152,11 +281,15 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img
-                    src="./images/portfolio/borders.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <img 
+                  srcset="./images/portfolio/370/borders-370.jpg 370w,
+                  ./images/portfolio/354/borders-354.jpg 354w,
+                  ./images/portfolio/450/borders-450.jpg 450w,
+                  ./images/portfolio/370/borders@2x-370.jpg 740w,
+                  ./images/portfolio/354/borders-354@2x.jpg 708w,
+                  ./images/portfolio/450/borders-450@2x.jpg 900w"
+                  sizes="(min-width: 1920pxpx) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 354px"
+                  src="./images/portfolio/370/borders-370.jpg" alt="Inspiration has no Borders" />
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -172,11 +305,15 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img
-                    src="./images/portfolio/book.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                  />
+                  <img 
+                  srcset="./images/portfolio/370/book-370.jpg 370w,
+                  ./images/portfolio/354/book-354.jpg 354w,
+                  ./images/portfolio/450/book-450.jpg 450w,
+                  ./images/portfolio/370/book@2x-370.jpg 740w,
+                  ./images/portfolio/354/book-354@2x.jpg 708w,
+                  ./images/portfolio/450/book-450@2x.jpg 900w"
+                  sizes="(min-width: 1920px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 354px"
+                  src="./images/portfolio/370/book-370.jpg" alt="Видання Limited Edition" />
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -192,7 +329,15 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img src="./images/portfolio/label.jpg" alt="Проєкт LAB" width="370" />
+                  <img 
+                  srcset="./images/portfolio/370/label-370.jpg 370w,
+                  ./images/portfolio/354/label-354.jpg 354w,
+                  ./images/portfolio/450/label-450.jpg 450w,
+                  ./images/portfolio/370/label@2x-370.jpg 740w,
+                  ./images/portfolio/354/label-354@2x.jpg 708w,
+                  ./images/portfolio/450/label-450@2x.jpg 900w"
+                  sizes="(min-width: 1920px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 354px"
+                  src="./images/portfolio/370/label-370.jpg" alt="Проєкт LAB" />
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -208,7 +353,15 @@
             <li class="cards-item">
               <a class="cards-link" href="">
                 <div class="cards-overlay">
-                  <img src="./images/portfolio/notebook.jpg" alt="Growing Business" width="370" />
+                  <img 
+                  srcset="./images/portfolio/370/notebook-370.jpg 370w,
+                  ./images/portfolio/354/notebook-354.jpg 354w,
+                  ./images/portfolio/450/notebook-450.jpg 450w,
+                  ./images/portfolio/370/notebook@2x-370.jpg 740w,
+                  ./images/portfolio/354/notebook-354@2x.jpg 708w,
+                  ./images/portfolio/450/notebook-450@2x.jpg 900w"
+                  sizes="(min-width: 1920px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, (min-width: 320px) 354px"
+                  src="./images/portfolio/370/notebook-370.jpg" alt="Growing Business" />
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -227,93 +380,116 @@
     </main>
     <footer class="footer">
       <div class="conteiner container-footer">
-        <div class="footer-address">
-          <a href="index.html" class="logo logo-footer logo-top"><span class="logo-span">Web</span>Studio</a>
-          <address>
-            <ul class="list">
-              <li class="address-list">
-                <a
-                  href="https://goo.gl/maps/oDGecrBfa1tS1iLr5"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  class="address-link"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
-                </a>
-              </li>
-              <li class="address-list">
-                <a
-                  id="mailto:info@devstudio.com"
-                  href="mailto:info@devstudio.com"
-                  class="address-link address-contacts"
-                >
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="address-list">
-                <a id="tel:+380961111111" 
-                   href="tel:+380961111111" 
-                   class="address-link address-contacts">
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-          </address>
+        <div class="address-action__box social-box">
+          <div class="footer-address">
+            <a href="index.html" class="logo logo-footer logo-top">
+              <span class="logo-span">Web</span>Studio
+            </a>
+            <address>
+              <ul class="list">
+                <li class="address-list">
+                  <a
+                    href="https://goo.gl/maps/oDGecrBfa1tS1iLr5"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="address-link"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="address-list">
+                  <a
+                    id="mailto:info@devstudio.com"
+                    href="mailto:info@devstudio.com"
+                    class="address-link address-contacts"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="address-list">
+                  <a
+                    id="tel:+380961111111"
+                    href="tel:+380961111111"
+                    class="address-link address-contacts"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="social-box">
+            <div class="action-footer">
+              <p class="action-text"><b>приєднуйтесь</b></p>
+              <ul class="action__list list">
+                <li class="action__item">
+                  <a class="action__link" href="">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./images/icons.svg#icon-instagram-f"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="action__item">
+                  <a class="action__link" href="">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./images/icons.svg#icon-twitter-f"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="action__item">
+                  <a class="action__link" href="">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./images/icons.svg#icon-facebook-f"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="action__item">
+                  <a class="action__link" href="">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./images/icons.svg#icon-linkedin-f"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="action-footer">
-          <p class="action"><b>приєднуйтесь</b></p>
-          <ul class="action__list list">
-            <li class="action__item">
-              <a class="action__link" href="">
-                <svg viewBox="0 0 100 100" width="20">
-                  <use xlink:href="./images/icons.svg#icon-instagram-f"></use>
+
+        <!-- Subscribe подписаться -->
+        <div class="subscribe">
+          <form name="subscribe-form" autocomplete="on" novalidate>
+            <label class="subscribe-form__label">
+              <p class="action-text"><b>Підпишіться на розсилку</b></p>
+              <div class="subscribe-input">
+                <input
+                  class="subscribe-form__write"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </div>
+            </label>
+
+            <div class="btn-footer-box">
+              <button type="button" class="hero-btn btn-footer btn-footer__box">
+                Підписатися
+                <svg viewBox="0 0 100 100" width="24" class="icon-telegram">
+                  <use xlink:href="./images/icons.svg#icon-telegram"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="action__item">
-              <a class="action__link" href="">
-                <svg viewBox="0 0 100 100" width="20">
-                  <use xlink:href="./images/icons.svg#icon-twitter-f"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="action__item">
-              <a class="action__link" href="">
-                <svg viewBox="0 0 100 100" width="20">
-                  <use xlink:href="./images/icons.svg#icon-facebook-f"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="action__item">
-              <a class="action__link" href="">
-                <svg viewBox="0 0 100 100" width="20">
-                  <use xlink:href="./images/icons.svg#icon-linkedin-f"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </div>
+          </form>
         </div>
-      
-
-<!-- Subscribe подписаться -->
-
-      <div class="subscribe">
-        
-<form name="subscribe-form" autocomplete="on" novalidate>
-  <label class="subscribe-form__label">
-    <p class="action"><b>Підпишіться на розсилку</b></p>
-    <input class="subscribe-form__write" type="email" name="email" placeholder="E-mail">
-  </label>
-
-    <button type="button" class="hero-btn btn-footer">
-      Підписатися
-      <svg viewBox="0 0 100 100" width="24" class="icon-telegram">
-        <use xlink:href="./images/icons.svg#icon-telegram"></use>
-      </svg>
-    </button>
-    </form>
-      </div>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
