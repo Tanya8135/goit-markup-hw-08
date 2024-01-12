@@ -13,10 +13,10 @@
   // overflow: auto;
   // height: 100vh;
 
-@include min-mobile {
-  max-width: 300px;
-  max-height: 609px;
-}
+  @include min-mobile {
+    max-width: 300px;
+    max-height: 609px;
+  }
 
   @include mobile {
     max-height: 609px;
@@ -78,20 +78,16 @@
 }
 
 .data-field__input {
-
-@include min-mobile {
-  min-width: 270px;
-}
+  @include min-mobile {
+    min-width: 270px;
+  }
 
   @include desktop {
-  min-width: 448px;
+    min-width: 448px;
   }
-  // display: flex;
+
   margin: 0;
   padding: 10px 12px 10px 42px;
-  // justify-content: center;
-  // align-items: baseline;
-  // min-width: 270px;
   min-width: 370px;
   font: inherit;
   border-radius: 4px;
